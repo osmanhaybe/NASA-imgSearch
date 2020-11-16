@@ -114,28 +114,15 @@ h3 {
 
 }
 
-/* modal popup styles */
-.image-popup {
-  position: fixed;
-  overflow: auto;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  animation: 500ms fadeIn;
-  display: none;
+.item-title {
+  overflow: hidden;
+  font-size: 1em;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @media(max-width: 1500) {
 
   .item {
